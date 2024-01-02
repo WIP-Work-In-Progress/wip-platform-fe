@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npx --no-install commitlint --config commitlint.config.ts --edit "$1"
-npx --no-install lint-staged
+npx --no-install commitlint --config .commitlintrc --edit "$1"
